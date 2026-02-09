@@ -1,0 +1,126 @@
+/* ===== Hobbies Page Only ===== */
+
+.hobbies-page {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.hobbies-page h2 {
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+    color: #0f172a;
+}
+
+.hobbies-page .subtitle {
+    color: #475569;
+    margin-bottom: 45px;
+    max-width: 720px;
+}
+
+/* Profile photos */
+
+/* ===== Profile Intro ===== */
+.profile-intro {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 70px;
+    background: #f8fafc;
+    padding: 10px;
+    border-radius: 22px;
+}
+
+.profile-image {
+    flex-shrink: 0;
+}
+
+.profile-image img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #0ea5e9;
+    box-shadow: 0 12px 30px rgba(14, 165, 233, 0.35);
+}
+
+.profile-text h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #0f172a;
+}
+
+.profile-text p {
+    font-size: 1rem;
+    color: #475569;
+    line-height: 1.7;
+    max-width: 520px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .profile-intro {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Cards */
+.hobbies-page .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.hobbies-page .card {
+    background: #ffffff;
+    padding: 32px 26px;
+    border-radius: 18px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.hobbies-page .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.14);
+}
+
+/* Icon on top */
+.hobbies-page .card-icon {
+    width: 234px;
+    height: 154px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hobbies-page .card-icon img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+
+/* Text */
+.hobbies-page .card h3 {
+    margin-bottom: 12px;
+    color: #0ea5e9;
+    font-size: 1.35rem;
+}
+
+.hobbies-page .card p {
+    color: #334155;
+    line-height: 1.6;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hobbies-page {
+        margin: 50px auto;
+    }
+
+    .hobbies-page .cards {
+        grid-template-columns: 1fr;
+    }
+}

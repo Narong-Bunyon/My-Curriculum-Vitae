@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QA & Automation Testing | Narong Bunyon</title>
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/learnpages/css/qatest.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo"><a href="/index.html">HOME</a></div>
+        <nav class="nav-links">
+          <a href="/learnpages/design.html">DESIGN</a>
+          <a href="/learnpages/prgrams.html">PROGRAMS</a>
+          <a href="/learnpages/backend.html">API</a>
+          <a href="#" class="active">TESTING</a>
+          <a href="/learnpages/cisco.html">CISCO</a>
+          <a href="/learnpages/cybersecurity.html">CYBERSECURITY</a>
+          <a href="/learnpages/app.html">APP</a>
+          <a href="/learnpages/devop.html">DEVOPS</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="qa-page">
+      <div class="qa-container">
+        <div class="page-head">
+          <h2>QA & AUTOMATION TESTING</h2>
+          <p class="subtitle">
+            I practice testing to improve software quality. This page shows my
+            approach: test strategy, tools, and automation skills for web
+            applications.
+          </p>
+        </div>
+        <section class="metrics" aria-label="QA metrics">
+          <article class="metric-card">
+            <p class="kicker">Focus</p>
+            <h3>Reliability</h3>
+            <p class="small">Prevent bugs, verify fixes, reduce regressions.</p>
+          </article>
+          <article class="metric-card">
+            <p class="kicker">Style</p>
+            <h3>Automation</h3>
+            <p class="small">
+              Repeatable tests that run fast and give confidence.
+            </p>
+          </article>
+          <article class="metric-card">
+            <p class="kicker">Output</p>
+            <h3>Reports</h3>
+            <p class="small">
+              Clear test cases, logs, screenshots, and results.
+            </p>
+          </article>
+        </section>
+        <section class="two-col">
+          <section class="panel pyramid" aria-label="Testing pyramid">
+            <div class="panel-head">
+              <h3>Testing Pyramid</h3>
+              <p class="subtitle small">
+                I follow a balanced approach: more unit tests, fewer UI tests.
+              </p>
+            </div>
+
+            <div class="pyramid-wrap">
+              <div class="layer layer-1">
+                <div class="layer-title">Unit Tests</div>
+                <div class="layer-desc">Fast checks for functions / logic</div>
+              </div>
+              <div class="layer layer-2">
+                <div class="layer-title">Integration Tests</div>
+                <div class="layer-desc">
+                  API + DB + services working together
+                </div>
+              </div>
+              <div class="layer layer-3">
+                <div class="layer-title">E2E / UI Tests</div>
+                <div class="layer-desc">User flows: login, checkout, forms</div>
+              </div>
+            </div>
+
+            <div class="mini-note">
+              <strong>Tip:</strong> Keep UI tests stable by testing key flows
+              only.
+            </div>
+          </section>
+
+          <section class="panel toolboard" aria-label="Tools and stack">
+            <div class="panel-head">
+              <h3>Tools I Practice</h3>
+              <p class="subtitle small">
+                Tools for manual testing + automation.
+              </p>
+            </div>
+
+            <div class="tool-grid">
+              <article class="tool">
+                <div class="tool-top">
+                  <span class="tool-badge">WEB</span>
+                  <h4>Selenium</h4>
+                </div>
+                <p class="mini muted">Browser automation basics</p>
+              </article>
+
+              <article class="tool">
+                <div class="tool-top">
+                  <span class="tool-badge">E2E</span>
+                  <h4>Playwright</h4>
+                </div>
+                <p class="mini muted">Fast modern end-to-end tests</p>
+              </article>
+
+              <article class="tool">
+                <div class="tool-top">
+                  <span class="tool-badge">API</span>
+                  <h4>Postman</h4>
+                </div>
+                <p class="mini muted">Test REST APIs + collections</p>
+              </article>
+
+              <article class="tool">
+                <div class="tool-top">
+                  <span class="tool-badge">DOC</span>
+                  <h4>Test Cases</h4>
+                </div>
+                <p class="mini muted">Write clear steps + expected results</p>
+              </article>
+
+              <article class="tool">
+                <div class="tool-top">
+                  <span class="tool-badge">BUG</span>
+                  <h4>Bug Reports</h4>
+                </div>
+                <p class="mini muted">Repro steps + evidence + priority</p>
+              </article>
+
+              <article class="tool">
+                <div class="tool-top">
+                  <span class="tool-badge">CI</span>
+                  <h4>CI Basics</h4>
+                </div>
+                <p class="mini muted">Run tests automatically</p>
+              </article>
+            </div>
+          </section>
+        </section>
+
+        <section class="panel accordion" aria-label="QA workflow">
+          <div class="panel-head">
+            <h3>QA Workflow</h3>
+            <p class="subtitle small">
+              My process from requirements to regression testing.
+            </p>
+          </div>
+
+          <details class="acc-item" open>
+            <summary>
+              <span class="acc-title">1) Understand requirements</span>
+              <span class="acc-meta">Scope • Acceptance criteria</span>
+            </summary>
+            <div class="acc-body">
+              <ul class="list">
+                <li>Read user story and acceptance criteria</li>
+                <li>Identify edge cases and risks</li>
+                <li>Prepare test data and scenarios</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="acc-item">
+            <summary>
+              <span class="acc-title">2) Create test cases</span>
+              <span class="acc-meta">Steps • Expected results</span>
+            </summary>
+            <div class="acc-body">
+              <ul class="list">
+                <li>Write positive and negative cases</li>
+                <li>Include boundary values</li>
+                <li>Link to requirements</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="acc-item">
+            <summary>
+              <span class="acc-title">3) Execute + report bugs</span>
+              <span class="acc-meta">Evidence • Priority</span>
+            </summary>
+            <div class="acc-body">
+              <ul class="list">
+                <li>Reproduce consistently</li>
+                <li>Attach screenshot / logs</li>
+                <li>Include clear steps + actual vs expected</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="acc-item">
+            <summary>
+              <span class="acc-title">4) Regression testing</span>
+              <span class="acc-meta">Verify fixes • Prevent re-break</span>
+            </summary>
+            <div class="acc-body">
+              <ul class="list">
+                <li>Re-test the bug fix</li>
+                <li>Run regression suite</li>
+                <li>Update test cases if needed</li>
+              </ul>
+            </div>
+          </details>
+        </section>
+
+        <section class="three-col">
+          <section class="panel" aria-label="Automation checklist">
+            <div class="panel-head">
+              <h3>Automation Checklist</h3>
+              <p class="subtitle small">
+                Before adding a test to suite, I check:
+              </p>
+            </div>
+
+            <ul class="check">
+              <li><span class="box"></span> Stable selectors (data-testid)</li>
+              <li><span class="box"></span> Clear assertions</li>
+              <li><span class="box"></span> Reliable waits (no hard sleep)</li>
+              <li>
+                <span class="box"></span> Independent tests (no order
+                dependency)
+              </li>
+              <li><span class="box"></span> Good naming + readable steps</li>
+            </ul>
+          </section>
+
+          <section class="panel" aria-label="Bug report template">
+            <div class="panel-head">
+              <h3>Bug Report Template</h3>
+              <p class="subtitle small">
+                Simple structure for clear reporting.
+              </p>
+            </div>
+
+            <div class="template">
+              <p><strong>Title:</strong> Short, clear issue</p>
+              <p><strong>Steps:</strong> 1… 2… 3…</p>
+              <p><strong>Expected:</strong> What should happen</p>
+              <p><strong>Actual:</strong> What happened</p>
+              <p><strong>Evidence:</strong> Screenshot / video / logs</p>
+            </div>
+          </section>
+
+          <section class="panel" aria-label="Mini test plan">
+            <div class="panel-head">
+              <h3>Mini Test Plan</h3>
+              <p class="subtitle small">Example of how I plan features.</p>
+            </div>
+
+            <div class="mini-table" role="region" aria-label="Test plan table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Area</th>
+                    <th>Check</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Login</td>
+                    <td>valid/invalid, lockout, messages</td>
+                  </tr>
+                  <tr>
+                    <td>Forms</td>
+                    <td>validation, required fields, limits</td>
+                  </tr>
+                  <tr>
+                    <td>API</td>
+                    <td>status codes, errors, schema</td>
+                  </tr>
+                  <tr>
+                    <td>UI</td>
+                    <td>responsive, a11y, layout</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </section>
+
+        <!-- Quick Links (same system) -->
+        <section class="quick-links">
+          <h3>Quick Links</h3>
+          <p class="subtitle small">
+            Useful websites I use for QA & automation practice.
+          </p>
+
+          <div class="link-list">
+            <a
+              class="pill"
+              href="https://playwright.dev/"
+              target="_blank"
+              rel="noopener"
+              >Playwright</a
+            >
+            <a
+              class="pill"
+              href="https://www.selenium.dev/"
+              target="_blank"
+              rel="noopener"
+              >Selenium</a
+            >
+            <a
+              class="pill"
+              href="https://www.postman.com/"
+              target="_blank"
+              rel="noopener"
+              >Postman</a
+            >
+            <a
+              class="pill"
+              href="https://developer.mozilla.org/"
+              target="_blank"
+              rel="noopener"
+              >MDN</a
+            >
+            <a
+              class="pill"
+              href="https://roadmap.sh/qa"
+              target="_blank"
+              rel="noopener"
+              >QA Roadmap</a
+            >
+          </div>
+        </section>
+      </div>
+    </section>
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <h3>NARONG BUNYON</h3>
+          <p>
+            Software Developer • IT Learner • Technology Enthusiast<br />
+            Actively seeking job opportunities and professional growth.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>QUICK BACK</h4>
+          <ul>
+            <li><a href="/index.html">HOME</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>CONTACT</h4>
+          <p>Email: narongbunyon@email.com</p>
+          <p>
+            Telegram:
+            <a href="https://t.me/NARONG_BY" target="_blank">@NARONG_BY</a>
+          </p>
+          <p>
+            Location: Street 371, Phum,Tropeang Chhuk,(Borey Sorla) Sangtak
+            Sensok, Phnom Penh
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 NARONGBUNYON. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

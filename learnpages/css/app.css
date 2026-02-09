@@ -1,0 +1,375 @@
+.mapp-page {
+    padding: 40px 0 60px;
+}
+
+.mapp-wrap {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+}
+
+/* Head */
+.mapp-head {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.mapp-head h2 {
+    text-align: start;
+    margin: 0 0 10px;
+    letter-spacing: 2px;
+    font-size: clamp(24px, 3vw, 36px);
+}
+
+.mapp-subtitle {
+    text-align: start;
+    max-width: 85ch;
+    margin: 0 auto;
+    line-height: 1.75;
+    opacity: 0.85;
+    font-size: 15px;
+}
+
+.mapp-mini {
+    margin: 6px 0 0;
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+/* Shared surface */
+.mapp-phone,
+.mapp-box {
+    border-radius: 16px;
+    padding: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
+}
+
+@media (prefers-color-scheme: dark) {
+
+    .mapp-phone,
+    .mapp-box {
+        background: rgba(255, 255, 255, 0.06);
+        border-color: rgba(255, 255, 255, 0.12);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+    }
+}
+
+/* Layout */
+.mapp-layout {
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: 16px;
+    align-items: start;
+}
+
+/* Phone mock */
+.mapp-phone-top {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+    opacity: 0.7;
+}
+
+.mapp-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background: rgba(0, 0, 0, 0.03);
+}
+
+@media (prefers-color-scheme: dark) {
+    .mapp-dot {
+        border-color: rgba(255, 255, 255, 0.18);
+        background: rgba(255, 255, 255, 0.06);
+    }
+}
+
+.mapp-screen {
+    border-radius: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: rgba(0, 0, 0, 0.02);
+    padding: 14px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .mapp-screen {
+        border-color: rgba(255, 255, 255, 0.12);
+        background: rgba(255, 255, 255, 0.04);
+    }
+}
+
+.mapp-appbar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.mapp-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    background: rgba(0, 0, 0, 0.03);
+}
+
+@media (prefers-color-scheme: dark) {
+    .mapp-avatar {
+        border-color: rgba(255, 255, 255, 0.18);
+        background: rgba(255, 255, 255, 0.06);
+    }
+}
+
+.mapp-title {
+    font-weight: 800;
+    letter-spacing: 0.2px;
+}
+
+.mapp-sub {
+    font-size: 12px;
+    opacity: 0.7;
+    margin-top: 2px;
+}
+
+.mapp-cards {
+    display: grid;
+    gap: 10px;
+}
+
+.mapp-mini-card {
+    border-radius: 14px;
+    padding: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    background: rgba(255, 255, 255, 0.35);
+}
+
+@media (prefers-color-scheme: dark) {
+    .mapp-mini-card {
+        border-color: rgba(255, 255, 255, 0.12);
+        background: rgba(255, 255, 255, 0.06);
+    }
+}
+
+.mapp-mini-title {
+    font-weight: 700;
+}
+
+.mapp-mini-sub {
+    font-size: 12px;
+    opacity: 0.7;
+    margin-top: 4px;
+}
+
+.mapp-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.mapp-nav {
+    width: 52px;
+    height: 8px;
+    border-radius: 999px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    background: rgba(0, 0, 0, 0.03);
+    opacity: 0.7;
+}
+
+.mapp-nav.active {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+    .mapp-nav {
+        border-color: rgba(255, 255, 255, 0.18);
+        background: rgba(255, 255, 255, 0.06);
+    }
+
+    .mapp-nav.active {
+        background: rgba(255, 255, 255, 0.14);
+    }
+}
+
+.mapp-phone-foot {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+    justify-content: center;
+}
+
+.mapp-chip {
+    font-size: 12px;
+    padding: 7px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: rgba(0, 0, 0, 0.03);
+}
+
+@media (prefers-color-scheme: dark) {
+    .mapp-chip {
+        border-color: rgba(255, 255, 255, 0.14);
+        background: rgba(255, 255, 255, 0.06);
+    }
+}
+
+/* Right content */
+.mapp-content {
+    display: grid;
+    gap: 16px;
+}
+
+.mapp-box h3 {
+    margin: 0 0 6px;
+    font-size: 18px;
+    letter-spacing: 0.4px;
+}
+
+/* Steps list */
+.mapp-steps {
+    margin: 12px 0 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 10px;
+}
+
+.mapp-steps li {
+    display: grid;
+    grid-template-columns: 34px 1fr;
+    gap: 12px;
+    align-items: start;
+    padding: 12px 14px;
+    border-radius: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    background: rgba(0, 0, 0, 0.02);
+}
+
+@media (prefers-color-scheme: dark) {
+    .mapp-steps li {
+        border-color: rgba(255, 255, 255, 0.12);
+        background: rgba(255, 255, 255, 0.04);
+    }
+}
+
+.mapp-num {
+    width: 28px;
+    height: 28px;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    background: rgba(0, 0, 0, 0.03);
+    font-size: 12px;
+    font-weight: 800;
+}
+
+@media (prefers-color-scheme: dark) {
+    .mapp-num {
+        border-color: rgba(255, 255, 255, 0.18);
+        background: rgba(255, 255, 255, 0.06);
+    }
+}
+
+/* Languages section */
+.mapp-lang {
+    margin-top: 12px;
+    display: grid;
+    gap: 10px;
+}
+
+.mapp-lang-item {
+    padding: 12px 14px;
+    border-radius: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    background: rgba(0, 0, 0, 0.02);
+}
+
+@media (prefers-color-scheme: dark) {
+    .mapp-lang-item {
+        border-color: rgba(255, 255, 255, 0.12);
+        background: rgba(255, 255, 255, 0.04);
+    }
+}
+
+.mapp-lang-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.mapp-lang-name {
+    font-weight: 800;
+    letter-spacing: 0.2px;
+}
+
+.mapp-lang-pill {
+    font-size: 12px;
+    padding: 7px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: rgba(0, 0, 0, 0.03);
+    opacity: 0.95;
+}
+
+@media (prefers-color-scheme: dark) {
+    .mapp-lang-pill {
+        border-color: rgba(255, 255, 255, 0.14);
+        background: rgba(255, 255, 255, 0.06);
+    }
+}
+
+/* Modules */
+.mapp-modules {
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.mapp-module {
+    padding: 12px 14px;
+    border-radius: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    background: rgba(0, 0, 0, 0.02);
+}
+
+@media (prefers-color-scheme: dark) {
+    .mapp-module {
+        border-color: rgba(255, 255, 255, 0.12);
+        background: rgba(255, 255, 255, 0.04);
+    }
+}
+
+.mapp-module-title {
+    font-weight: 800;
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+    .mapp-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .mapp-page {
+        padding: 28px 0 50px;
+    }
+
+    .mapp-phone,
+    .mapp-box {
+        padding: 16px;
+    }
+
+    .mapp-modules {
+        grid-template-columns: 1fr;
+    }
+}

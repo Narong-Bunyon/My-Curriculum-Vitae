@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CISCO CCNA Learning | Narong Bunyon</title>
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/learnpages/css/cisco.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo"><a href="/index.html">HOME</a></div>
+        <nav class="nav-links">
+          <a href="/learnpages/design.html">DESIGN</a>
+          <a href="/learnpages/prgrams.html">PROGRAMS</a>
+          <a href="/learnpages/backend.html">API</a>
+          <a href="/learnpages/qaautomation.html">TESTING</a>
+          <a href="#" class="active">CISCO</a>
+          <a href="/learnpages/cybersecurity.html">CYBERSECURITY</a>
+          <a href="/learnpages/app.html">APP</a>
+          <a href="/learnpages/devop.html">DEVOPS</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="cisco-page">
+      <div class="cisco-container">
+        <!-- Head -->
+        <div class="page-head">
+          <h2>CISCO CCNA LEARNING</h2>
+          <p class="subtitle">
+            My CCNA learning dashboard. I practice networking fundamentals,
+            routing/switching, and real labs using Packet Tracer and CLI
+            commands.
+          </p>
+        </div>
+
+        <section class="tabs" aria-label="CCNA tabs">
+          <a class="tab active" href="#ccna1">CCNA 1</a>
+          <a class="tab" href="#ccna2">CCNA 2</a>
+          <a class="tab" href="#labs">Labs</a>
+          <a class="tab" href="#commands">Commands</a>
+        </section>
+
+        <section class="levels" aria-label="CCNA level overview">
+          <article class="level-card" id="ccna1">
+            <div class="level-top">
+              <div class="badge">CCNA 1</div>
+              <div class="level-text">
+                <h3>Introduction to Networks</h3>
+                <p class="mini">Network basics • OSI • IP addressing</p>
+              </div>
+            </div>
+
+            <p class="desc">
+              Focus on foundational networking: how devices communicate, basic
+              network components, addressing, and simple configurations.
+            </p>
+
+            <div class="tags">
+              <span class="tag">OSI/TCP-IP</span>
+              <span class="tag">IPv4</span>
+              <span class="tag">Subnetting</span>
+              <span class="tag">Switching Basics</span>
+            </div>
+
+            <div class="progress">
+              <div class="progress-top">
+                <span>Progress</span><span class="mini muted">60%</span>
+              </div>
+              <div class="bar"><span style="width: 60%"></span></div>
+            </div>
+
+            <div class="card-foot">
+              <span class="hint"
+                >Goal: Master IP + subnetting + basic switch config</span
+              >
+              <div class="actions">
+                <a class="pill-link" href="#labs">Go to Labs</a>
+                <a class="pill-link" href="#commands">Commands</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="level-card" id="ccna2">
+            <div class="level-top">
+              <div class="badge">CCNA 2</div>
+              <div class="level-text">
+                <h3>Switching, Routing & Wireless Essentials</h3>
+                <p class="mini">VLAN • Inter-VLAN • Static/Dynamic routing</p>
+              </div>
+            </div>
+
+            <p class="desc">
+              Build stronger network skills: VLANs, routing basics, wireless
+              concepts, and troubleshooting using structured methods.
+            </p>
+
+            <div class="tags">
+              <span class="tag">VLAN</span>
+              <span class="tag">Inter-VLAN</span>
+              <span class="tag">Routing</span>
+              <span class="tag">STP Basics</span>
+            </div>
+
+            <div class="progress">
+              <div class="progress-top">
+                <span>Progress</span><span class="mini muted">40%</span>
+              </div>
+              <div class="bar"><span style="width: 40%"></span></div>
+            </div>
+
+            <div class="card-foot">
+              <span class="hint"
+                >Goal: VLAN + routing + troubleshooting confidence</span
+              >
+              <div class="actions">
+                <a class="pill-link" href="#labs">Lab Checklist</a>
+                <a class="pill-link" href="#plan">Study Plan</a>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <!-- Split area: Labs + Study Plan -->
+        <section class="split" id="labs">
+          <section class="panel" aria-label="Lab checklist">
+            <div class="panel-head">
+              <h3>Lab Checklist</h3>
+              <p class="subtitle small">
+                What I practice using Packet Tracer and CLI.
+              </p>
+            </div>
+
+            <ul class="checklist">
+              <li>
+                <span class="box"></span> Build simple LAN (PC ↔ Switch ↔
+                Router)
+              </li>
+              <li>
+                <span class="box"></span> Configure IP address + default gateway
+              </li>
+              <li>
+                <span class="box"></span> Subnetting practice (different network
+                sizes)
+              </li>
+              <li>
+                <span class="box"></span> Create VLANs and assign switch ports
+              </li>
+              <li>
+                <span class="box"></span> Inter-VLAN routing (router-on-a-stick)
+              </li>
+              <li><span class="box"></span> Basic routing (static routes)</li>
+              <li>
+                <span class="box"></span> Troubleshooting with ping/traceroute
+              </li>
+            </ul>
+
+            <div class="mini-note">
+              <strong>Tip:</strong> Always verify with
+              <code>show</code> commands after each config.
+            </div>
+          </section>
+
+          <section class="panel" id="plan" aria-label="Study plan">
+            <div class="panel-head">
+              <h3>Study Plan</h3>
+              <p class="subtitle small">
+                A simple weekly structure to stay consistent.
+              </p>
+            </div>
+
+            <div class="plan-grid">
+              <div class="plan-card">
+                <h4>Mon–Tue</h4>
+                <p class="mini muted">Theory + notes</p>
+                <ul class="list">
+                  <li>OSI / TCP-IP</li>
+                  <li>IPv4 + subnetting</li>
+                  <li>Switching concepts</li>
+                </ul>
+              </div>
+
+              <div class="plan-card">
+                <h4>Wed–Thu</h4>
+                <p class="mini muted">CLI practice</p>
+                <ul class="list">
+                  <li>Config basics</li>
+                  <li>VLAN practice</li>
+                  <li>Verification (show)</li>
+                </ul>
+              </div>
+
+              <div class="plan-card">
+                <h4>Fri–Sun</h4>
+                <p class="mini muted">Packet Tracer labs</p>
+                <ul class="list">
+                  <li>Build topologies</li>
+                  <li>Fix broken configs</li>
+                  <li>Document steps</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- Commands cheat sheet (unique UI) -->
+        <section
+          class="panel commands"
+          id="commands"
+          aria-label="Cisco commands cheat sheet"
+        >
+          <div class="panel-head">
+            <h3>CLI Commands Cheat Sheet</h3>
+            <p class="subtitle small">
+              Quick reference I use during labs. (Switch/Router basics)
+            </p>
+          </div>
+
+          <div class="cmd-grid">
+            <article class="cmd">
+              <h4>Basic</h4>
+              <pre><code>enable
+configure terminal
+hostname R1
+no ip domain-lookup
+copy run start</code></pre>
+            </article>
+
+            <article class="cmd">
+              <h4>Interfaces</h4>
+              <pre><code>show ip interface brief
+interface g0/0
+ip address 192.168.1.1 255.255.255.0
+no shutdown</code></pre>
+            </article>
+
+            <article class="cmd">
+              <h4>Switch VLAN</h4>
+              <pre><code>show vlan brief
+vlan 10
+name SALES
+interface f0/1
+switchport mode access
+switchport access vlan 10</code></pre>
+            </article>
+
+            <article class="cmd">
+              <h4>Troubleshoot</h4>
+              <pre><code>ping 8.8.8.8
+traceroute 8.8.8.8
+show running-config
+show ip route</code></pre>
+            </article>
+          </div>
+        </section>
+
+        <!-- Quick Links -->
+        <section class="quick-links">
+          <h3>Quick Links</h3>
+          <p class="subtitle small">
+            Websites I use for CCNA learning and labs.
+          </p>
+
+          <div class="link-list">
+            <a
+              class="pill"
+              href="https://www.netacad.com/"
+              target="_blank"
+              rel="noopener"
+              >NetAcad</a
+            >
+            <a
+              class="pill"
+              href="https://packettracer.com/"
+              target="_blank"
+              rel="noopener"
+              >Packet Tracer</a
+            >
+            <a
+              class="pill"
+              href="https://learningnetwork.cisco.com/"
+              target="_blank"
+              rel="noopener"
+              >Cisco Learning Network</a
+            >
+            <a
+              class="pill"
+              href="https://www.subnetting.net/"
+              target="_blank"
+              rel="noopener"
+              >Subnetting Practice</a
+            >
+            <a
+              class="pill"
+              href="https://roadmap.sh/"
+              target="_blank"
+              rel="noopener"
+              >Roadmap</a
+            >
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <h3>NARONG BUNYON</h3>
+          <p>
+            Software Developer • IT Learner • Technology Enthusiast<br />
+            Actively seeking job opportunities and professional growth.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>QUICK BACK</h4>
+          <ul>
+            <li><a href="/index.html">HOME</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>CONTACT</h4>
+          <p>Email: narongbunyon@email.com</p>
+          <p>
+            Telegram:
+            <a href="https://t.me/NARONG_BY" target="_blank">@NARONG_BY</a>
+          </p>
+          <p>
+            Location: Street 371, Phum,Tropeang Chhuk,(Borey Sorla) Sangtak
+            Sensok, Phnom Penh
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 NARONGBUNYON. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

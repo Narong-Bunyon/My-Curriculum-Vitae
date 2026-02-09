@@ -1,0 +1,305 @@
+/* /learnpages/css/devop.css */
+/* DevOps Basic Learning page — pipeline UI + clean panels.
+   No background/theme changes. Unique dvx-* classes to avoid conflicts. */
+
+.dvx-page {
+    padding: 40px 0 60px;
+}
+
+.dvx-wrap {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+}
+
+/* Head */
+.dvx-head {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.dvx-head h2 {
+    text-align: start;
+    margin: 0 0 10px;
+    letter-spacing: 2px;
+    font-size: clamp(24px, 3vw, 36px);
+}
+
+.dvx-subtitle {
+    text-align: start;
+    max-width: 85ch;
+    margin: 0 auto;
+    line-height: 1.75;
+    opacity: 0.85;
+    font-size: 15px;
+}
+
+.dvx-subtitle-small {
+    font-size: 14px;
+    opacity: 0.78;
+}
+
+.dvx-mini {
+    margin: 6px 0 0;
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+/* Chips */
+.dvx-chips {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.dvx-chip {
+    font-size: 12px;
+    padding: 7px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: rgba(0, 0, 0, 0.03);
+    opacity: 0.95;
+}
+
+@media (prefers-color-scheme: dark) {
+    .dvx-chip {
+        border-color: rgba(255, 255, 255, 0.14);
+        background: rgba(255, 255, 255, 0.06);
+    }
+}
+
+/* Surface */
+.dvx-surface {
+    border-radius: 16px;
+    padding: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
+}
+
+@media (prefers-color-scheme: dark) {
+    .dvx-surface {
+        background: rgba(255, 255, 255, 0.06);
+        border-color: rgba(255, 255, 255, 0.12);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+    }
+}
+
+.dvx-surface-head h3 {
+    margin: 0 0 6px;
+    font-size: 18px;
+    letter-spacing: 0.4px;
+}
+
+/* Pipeline */
+.dvx-pipeline {
+    margin-top: 14px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr auto 1fr;
+    gap: 10px;
+    align-items: stretch;
+}
+
+.dvx-step {
+    border-radius: 14px;
+    padding: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    background: rgba(0, 0, 0, 0.02);
+}
+
+@media (prefers-color-scheme: dark) {
+    .dvx-step {
+        border-color: rgba(255, 255, 255, 0.12);
+        background: rgba(255, 255, 255, 0.04);
+    }
+}
+
+.dvx-step-top {
+    display: grid;
+    grid-template-columns: 34px 1fr;
+    gap: 12px;
+    align-items: start;
+    margin-bottom: 8px;
+}
+
+.dvx-step-badge {
+    width: 28px;
+    height: 28px;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    background: rgba(0, 0, 0, 0.03);
+    font-size: 12px;
+    font-weight: 800;
+}
+
+@media (prefers-color-scheme: dark) {
+    .dvx-step-badge {
+        border-color: rgba(255, 255, 255, 0.18);
+        background: rgba(255, 255, 255, 0.06);
+    }
+}
+
+.dvx-step-title {
+    font-weight: 800;
+    letter-spacing: 0.2px;
+}
+
+.dvx-list {
+    margin: 0;
+    padding-left: 18px;
+    line-height: 1.6;
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.dvx-arrow {
+    align-self: center;
+    opacity: 0.6;
+    font-weight: 800;
+    padding: 0 2px;
+}
+
+/* Two panels */
+.dvx-two {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+/* Checklist */
+.dvx-check {
+    margin: 12px 0 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 10px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.dvx-check li {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    line-height: 1.65;
+}
+
+.dvx-box {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    background: rgba(0, 0, 0, 0.02);
+    margin-top: 3px;
+    flex: 0 0 auto;
+}
+
+@media (prefers-color-scheme: dark) {
+    .dvx-box {
+        border-color: rgba(255, 255, 255, 0.22);
+        background: rgba(255, 255, 255, 0.04);
+    }
+}
+
+.dvx-note {
+    margin-top: 12px;
+    padding: 12px 14px;
+    border-radius: 14px;
+    border: 1px dashed rgba(0, 0, 0, 0.14);
+    background: rgba(0, 0, 0, 0.02);
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+@media (prefers-color-scheme: dark) {
+    .dvx-note {
+        border-color: rgba(255, 255, 255, 0.18);
+        background: rgba(255, 255, 255, 0.04);
+    }
+}
+
+/* Tool stack rows */
+.dvx-stack {
+    margin-top: 12px;
+    display: grid;
+    gap: 10px;
+}
+
+.dvx-stack-row {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 10px;
+    align-items: center;
+    padding: 12px 14px;
+    border-radius: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    background: rgba(0, 0, 0, 0.02);
+}
+
+@media (prefers-color-scheme: dark) {
+    .dvx-stack-row {
+        border-color: rgba(255, 255, 255, 0.12);
+        background: rgba(255, 255, 255, 0.04);
+    }
+}
+
+.dvx-label {
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    opacity: 0.75;
+    font-weight: 800;
+}
+
+.dvx-pill {
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 6px;
+    padding: 7px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: rgba(0, 0, 0, 0.03);
+    font-size: 12px;
+    opacity: 0.95;
+}
+
+@media (prefers-color-scheme: dark) {
+    .dvx-pill {
+        border-color: rgba(255, 255, 255, 0.14);
+        background: rgba(255, 255, 255, 0.06);
+    }
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+    .dvx-pipeline {
+        grid-template-columns: 1fr;
+    }
+
+    .dvx-arrow {
+        display: none;
+    }
+
+    .dvx-two {
+        grid-template-columns: 1fr;
+    }
+
+    .dvx-stack-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .dvx-page {
+        padding: 28px 0 50px;
+    }
+
+    .dvx-surface {
+        padding: 16px;
+    }
+}

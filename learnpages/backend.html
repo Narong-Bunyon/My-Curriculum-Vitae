@@ -1,0 +1,393 @@
+<!-- /learnpages/backend.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Backend & API Learning | Narong Bunyon</title>
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/learnpages/css/api.css" />
+  </head>
+
+  <body>
+    <!-- HEADER (DO NOT CHANGE) -->
+    <header>
+      <div class="navbar">
+        <div class="logo"><a href="/index.html">HOME</a></div>
+        <nav class="nav-links">
+          <a href="/learnpages/design.html">DESIGN</a>
+          <a href="/learnpages/prgrams.html">PROGRAMS</a>
+          <a href="#" class="active">API</a>
+          <a href="/learnpages/qaautomation.html">TESTING</a>
+          <a href="/learnpages/cisco.html">CISCO</a>
+          <a href="/learnpages/cybersecurity.html">CYBERSECURITY</a>
+          <a href="/learnpages/app.html">APP</a>
+          <a href="/learnpages/devop.html">DEVOPS</a>
+        </nav>
+      </div>
+    </header>
+    <section class="api-page">
+      <div class="api-container">
+        <div class="page-head">
+          <h2>BACKEND & API LEARNING</h2>
+          <p class="subtitle">
+            Backend fundamentals and API practice. I focus on building reliable
+            services, working with databases, and using best practices
+            (security, validation, docs).
+          </p>
+        </div>
+        <section class="dash" aria-label="Backend learning dashboard">
+          <article class="dash-card">
+            <p class="kicker">Current Focus</p>
+            <h3>REST API + CRUD</h3>
+            <p class="small">
+              Build endpoints, connect database, validate input, return clean
+              responses.
+            </p>
+          </article>
+
+          <article class="dash-card">
+            <p class="kicker">Quality</p>
+            <h3>Security & Errors</h3>
+            <p class="small">
+              Auth basics, status codes, error handling, logging, and edge
+              cases.
+            </p>
+          </article>
+
+          <article class="dash-card">
+            <p class="kicker">Output</p>
+            <h3>Docs & Testing</h3>
+            <p class="small">
+              Write API docs + test endpoints using Postman/Insomnia.
+            </p>
+          </article>
+        </section>
+        <!-- Two Column Layout -->
+        <section class="split">
+          <!-- LEFT -->
+          <div class="col">
+            <section class="panel" aria-label="Backend skill modules">
+              <div class="panel-head">
+                <h3>Skill Modules</h3>
+                <p class="subtitle small">
+                  What I practice in backend and API development.
+                </p>
+              </div>
+
+              <div class="module-list">
+                <article class="module">
+                  <div class="module-top">
+                    <div class="badge">REST</div>
+                    <div class="mtext">
+                      <h4>REST API Design</h4>
+                      <p class="mini">Routes • Methods • Status codes</p>
+                    </div>
+                  </div>
+                  <p class="desc">
+                    Design endpoints with clean naming, HTTP methods, and
+                    correct response codes.
+                  </p>
+                  <div class="tags">
+                    <span class="tag">GET/POST</span>
+                    <span class="tag">PUT/PATCH</span>
+                    <span class="tag">DELETE</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-top">
+                      <span>Progress</span><span class="mini muted">60%</span>
+                    </div>
+                    <div class="bar"><span style="width: 60%"></span></div>
+                  </div>
+                </article>
+
+                <article class="module">
+                  <div class="module-top">
+                    <div class="badge">DB</div>
+                    <div class="mtext">
+                      <h4>Database & SQL</h4>
+                      <p class="mini">Tables • Relations • Joins</p>
+                    </div>
+                  </div>
+                  <p class="desc">
+                    Build schemas, relationships, and queries for real CRUD
+                    apps.
+                  </p>
+                  <div class="tags">
+                    <span class="tag">Schema</span>
+                    <span class="tag">Join</span>
+                    <span class="tag">Index</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-top">
+                      <span>Progress</span><span class="mini muted">50%</span>
+                    </div>
+                    <div class="bar"><span style="width: 50%"></span></div>
+                  </div>
+                </article>
+
+                <article class="module">
+                  <div class="module-top">
+                    <div class="badge">SEC</div>
+                    <div class="mtext">
+                      <h4>Validation & Security</h4>
+                      <p class="mini">Sanitize • Auth basics • Rate limit</p>
+                    </div>
+                  </div>
+                  <p class="desc">
+                    Validate input, handle auth patterns, and protect endpoints
+                    from common issues.
+                  </p>
+                  <div class="tags">
+                    <span class="tag">Validation</span>
+                    <span class="tag">Auth</span>
+                    <span class="tag">Errors</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-top">
+                      <span>Progress</span><span class="mini muted">35%</span>
+                    </div>
+                    <div class="bar"><span style="width: 35%"></span></div>
+                  </div>
+                </article>
+              </div>
+            </section>
+            <section class="panel" aria-label="Example endpoints">
+              <div class="panel-head">
+                <h3>Example Endpoints</h3>
+                <p class="subtitle small">
+                  A simple reference format I follow when building APIs.
+                </p>
+              </div>
+
+              <div
+                class="table-wrap"
+                role="region"
+                aria-label="Endpoints table"
+              >
+                <table class="api-table">
+                  <thead>
+                    <tr>
+                      <th>Method</th>
+                      <th>Route</th>
+                      <th>Purpose</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><span class="chip">GET</span></td>
+                      <td><code>/api/users</code></td>
+                      <td>List users</td>
+                      <td>200</td>
+                    </tr>
+                    <tr>
+                      <td><span class="chip">POST</span></td>
+                      <td><code>/api/users</code></td>
+                      <td>Create user</td>
+                      <td>201</td>
+                    </tr>
+                    <tr>
+                      <td><span class="chip">GET</span></td>
+                      <td><code>/api/users/:id</code></td>
+                      <td>Get user detail</td>
+                      <td>200 / 404</td>
+                    </tr>
+                    <tr>
+                      <td><span class="chip">PATCH</span></td>
+                      <td><code>/api/users/:id</code></td>
+                      <td>Update user</td>
+                      <td>200 / 400</td>
+                    </tr>
+                    <tr>
+                      <td><span class="chip">DELETE</span></td>
+                      <td><code>/api/users/:id</code></td>
+                      <td>Remove user</td>
+                      <td>204</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="note">
+                <strong>Tip:</strong>
+                Return consistent JSON response shapes (success, message, data,
+                error).
+              </div>
+            </section>
+          </div>
+
+          <!-- RIGHT -->
+          <div class="col">
+            <section class="panel" aria-label="Learning timeline">
+              <div class="panel-head">
+                <h3>Learning Path</h3>
+                <p class="subtitle small">
+                  Step-by-step plan for building strong backend skills.
+                </p>
+              </div>
+
+              <ol class="timeline">
+                <li class="step">
+                  <div class="dot"></div>
+                  <div class="step-body">
+                    <h4>Step 1: Understand HTTP</h4>
+                    <p class="mini">
+                      Requests, responses, headers, status codes
+                    </p>
+                  </div>
+                </li>
+                <li class="step">
+                  <div class="dot"></div>
+                  <div class="step-body">
+                    <h4>Step 2: Build CRUD API</h4>
+                    <p class="mini">Create routes, controllers, services</p>
+                  </div>
+                </li>
+                <li class="step">
+                  <div class="dot"></div>
+                  <div class="step-body">
+                    <h4>Step 3: Connect Database</h4>
+                    <p class="mini">SQL tables, relations, migrations</p>
+                  </div>
+                </li>
+                <li class="step">
+                  <div class="dot"></div>
+                  <div class="step-body">
+                    <h4>Step 4: Validation & Security</h4>
+                    <p class="mini">Sanitize, auth basics, error handling</p>
+                  </div>
+                </li>
+                <li class="step">
+                  <div class="dot"></div>
+                  <div class="step-body">
+                    <h4>Step 5: Document & Test</h4>
+                    <p class="mini">Postman collections + API docs</p>
+                  </div>
+                </li>
+              </ol>
+            </section>
+
+            <!-- Checklist (Different style) -->
+            <section class="panel" aria-label="API checklist">
+              <div class="panel-head">
+                <h3>API Checklist</h3>
+                <p class="subtitle small">
+                  Before I say “done”, I check these items.
+                </p>
+              </div>
+
+              <ul class="checklist">
+                <li>
+                  <span class="box"></span> Correct status codes
+                  (200/201/204/400/401/404)
+                </li>
+                <li>
+                  <span class="box"></span> Input validation + clean error
+                  messages
+                </li>
+                <li>
+                  <span class="box"></span> Consistent JSON response format
+                </li>
+                <li>
+                  <span class="box"></span> Database connection works (CRUD)
+                </li>
+                <li>
+                  <span class="box"></span> Documentation + examples for
+                  requests
+                </li>
+                <li>
+                  <span class="box"></span> Tested endpoints in Postman/Insomnia
+                </li>
+              </ul>
+            </section>
+
+            <!-- Quick Links -->
+            <section class="quick-links">
+              <h3>Quick Links</h3>
+              <p class="subtitle small">
+                Useful websites I use to learn backend and APIs.
+              </p>
+
+              <div class="link-list">
+                <a
+                  class="pill"
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTTP"
+                  target="_blank"
+                  rel="noopener"
+                  >HTTP (MDN)</a
+                >
+                <a
+                  class="pill"
+                  href="https://www.postman.com/"
+                  target="_blank"
+                  rel="noopener"
+                  >Postman</a
+                >
+                <a
+                  class="pill"
+                  href="https://swagger.io/"
+                  target="_blank"
+                  rel="noopener"
+                  >Swagger</a
+                >
+                <a
+                  class="pill"
+                  href="https://roadmap.sh/backend"
+                  target="_blank"
+                  rel="noopener"
+                  >Backend Roadmap</a
+                >
+                <a
+                  class="pill"
+                  href="https://www.freecodecamp.org/"
+                  target="_blank"
+                  rel="noopener"
+                  >freeCodeCamp</a
+                >
+              </div>
+            </section>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- FOOTER (DO NOT CHANGE) -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <h3>NARONG BUNYON</h3>
+          <p>
+            Software Developer • IT Learner • Technology Enthusiast<br />
+            Actively seeking job opportunities and professional growth.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>QUICK BACK</h4>
+          <ul>
+            <li><a href="/index.html">HOME</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>CONTACT</h4>
+          <p>Email: narongbunyon@email.com</p>
+          <p>
+            Telegram:
+            <a href="https://t.me/NARONG_BY" target="_blank">@NARONG_BY</a>
+          </p>
+          <p>
+            Location: Street 371, Phum,Tropeang Chhuk,(Borey Sorla) Sangtak
+            Sensok, Phnom Penh
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 NARONGBUNYON. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
