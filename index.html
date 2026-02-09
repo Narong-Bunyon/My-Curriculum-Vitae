@@ -13,18 +13,24 @@
     <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body>
-    <header>
-      <div class="navbar">
-        <div class="logo">NARONG BUNYON</div>
-        <nav class="nav-links">
-          <a href="#" class="active">HOME</a>
-          <a href="/pages/about/about.html">ABOUT ME</a>
-          <a href="/pages/experein/experience.html">EXPERIENCE</a>
-          <a href="/pages/hoobies/hobbies.html">ACTIVITIES & HOBBIES</a>
-          <a href="/pages/contact/contact.html">CONTACT</a>
-        </nav>
-      </div>
-    </header>
+<header>
+  <div class="navbar">
+    <div class="logo">NARONG BUNYON</div>
+
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav class="nav-links" id="navMenu">
+      <a href="#" class="active">HOME</a>
+      <a href="/pages/about/about.html">ABOUT ME</a>
+      <a href="/pages/experein/experience.html">EXPERIENCE</a>
+      <a href="/pages/hoobies/hobbies.html">ACTIVITIES & HOBBIES</a>
+      <a href="/pages/contact/contact.html">CONTACT</a>
+    </nav>
+  </div>
+</header>
+
 
     <section class="hero">
       <div>
@@ -199,7 +205,13 @@
 </div>
 
 <!-- Add JavaScript for Modal  -->
-  <script>
-    
-  </script>
+<script>
+  const toggle = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  toggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+
 </html>

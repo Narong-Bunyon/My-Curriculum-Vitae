@@ -60,6 +60,87 @@ header {
     width: 100%;
 }
 
+/* ===== Mobile Navbar: Modern Dropdown Card ===== */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #e5e7eb;
+    font-size: 1.9rem;
+    cursor: pointer;
+    line-height: 1;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 12px 14px;
+    }
+
+    .logo {
+        font-size: 1.15rem;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+        padding: 10px 12px;
+        border-radius: 12px;
+    }
+
+    .menu-toggle:active {
+        background: rgba(56, 189, 248, 0.15);
+    }
+
+    .nav-links {
+        width: 100%;
+        display: grid;
+        gap: 10px;
+
+        background: #0b1223;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 16px;
+        padding: 10px;
+
+        /* closed */
+        max-height: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        border-width: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease, padding 0.25s ease, border-width 0.25s ease;
+    }
+
+    .nav-links a {
+        padding: 12px 14px;
+        border-radius: 14px;
+        text-align: left;
+        font-size: 1rem;
+        background: rgba(255, 255, 255, 0.04);
+    }
+
+    .nav-links a:hover {
+        background: rgba(255, 255, 255, 0.06);
+    }
+
+    .nav-links a.active {
+        outline: 2px solid rgba(56, 189, 248, 0.55);
+    }
+
+    /* open */
+    .nav-links.active {
+        max-height: 520px;
+        padding: 10px;
+        border-width: 1px;
+    }
+}
+
+
+
+
+
+
 /* ===== HERO ===== */
 
 
