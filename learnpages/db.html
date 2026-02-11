@@ -1,0 +1,179 @@
+<!-- /learnpages/app.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile App Learning | Narong Bunyon</title>
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/learnpages/css/db.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+
+  <body>
+    <!-- HEADER (DO NOT CHANGE) -->
+    <header>
+      <div class="navbar">
+        <div class="logo"><a href="/index.html">HOME</a></div>
+        <button
+          class="menu-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <nav class="nav-links">
+          <a href="/learnpages/design.html">DESIGN</a>
+          <a href="/learnpages/prgrams.html">PROGRAMS</a>
+          <a href="/learnpages/backend.html">API</a>
+          <a href="#" class="active">DB</a>
+          <a href="/learnpages/qaautomation.html">QA</a>
+          <a href="/learnpages/cisco.html">CISCO</a>
+          <a href="/learnpages/cybersecurity.html">CYBERSECURITY</a>
+          <a href="/learnpages/app.html">APP</a>
+          <a href="/learnpages/devop.html">DEVOPS</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- CONTENT -->
+
+    <section class="db-page">
+      <div class="db-wrap">
+        <!-- HERO -->
+        <div class="db-hero">
+          <h2>DATABASE ENGINEERING</h2>
+          <p>
+            I design structured databases, write optimized queries, and connect
+            backend systems with scalable data storage.
+          </p>
+        </div>
+
+        <!-- OVERVIEW CARDS -->
+        <div class="db-grid">
+          <div class="db-card">
+            <h3>SQL Systems</h3>
+            <p>MySQL, PostgreSQL, structured schemas, joins, indexing.</p>
+            <span class="db-tag">Relational</span>
+          </div>
+
+          <div class="db-card">
+            <h3>NoSQL</h3>
+            <p>Document-based storage, flexible schema, fast scaling.</p>
+            <span class="db-tag">MongoDB</span>
+          </div>
+
+          <div class="db-card">
+            <h3>Database Design</h3>
+            <p>Primary key, foreign key, normalization, ER diagrams.</p>
+            <span class="db-tag">Architecture</span>
+          </div>
+
+          <div class="db-card">
+            <h3>Performance</h3>
+            <p>Query optimization, indexing, transaction control.</p>
+            <span class="db-tag">Optimization</span>
+          </div>
+        </div>
+
+        <!-- ARCHITECTURE SECTION -->
+        <div class="db-architecture">
+          <h3>System Flow</h3>
+
+          <div class="db-flow">
+            <div class="db-node">Frontend</div>
+            <div class="db-arrow">→</div>
+            <div class="db-node">API Server</div>
+            <div class="db-arrow">→</div>
+            <div class="db-node active">Database</div>
+          </div>
+        </div>
+
+        <!-- SKILLS -->
+        <div class="db-tools">
+          <h3>Tools & Technologies</h3>
+
+          <div class="db-tool-grid">
+            <div class="db-tool">MySQL</div>
+            <div class="db-tool">PostgreSQL</div>
+            <div class="db-tool">MongoDB</div>
+            <div class="db-tool">Firebase</div>
+            <div class="db-tool">SQL Server</div>
+            <div class="db-tool">Draw.io ERD</div>
+          </div>
+        </div>
+
+        <!-- LEARNING ROADMAP -->
+        <div class="db-roadmap">
+          <h3>Learning Roadmap</h3>
+
+          <ul>
+            <li><span>01</span> Database Fundamentals</li>
+            <li><span>02</span> Schema Design</li>
+            <li><span>04</span> Performance Tuning</li>
+            <li><span>05</span> Scaling & Cloud DB</li>
+            <li><span>03</span> Advanced SQL Queries Plan to Learning</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER (DO NOT CHANGE) -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <h3>NARONG BUNYON</h3>
+          <p>
+            Software Developer • IT Learner • Technology Enthusiast<br />
+            Actively seeking job opportunities and professional growth.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>QUICK BACK</h4>
+          <ul>
+            <li><a href="/index.html">HOME</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>CONTACT</h4>
+          <p>Email: narongbunyon@email.com</p>
+          <p>
+            Telegram:
+            <a href="https://t.me/NARONG_BY" target="_blank">@NARONG_BY</a>
+          </p>
+          <p>
+            Location: Street 371, Phum,Tropeang Chhuk,(Borey Sorla) Sangtak
+            Sensok, Phnom Penh
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 NARONGBUNYON. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+  <script>
+    const toggleBtn = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector(".nav-links");
+
+    toggleBtn.addEventListener("click", () => {
+      const open = navMenu.classList.toggle("active");
+      toggleBtn.setAttribute("aria-expanded", open ? "true" : "false");
+      toggleBtn.textContent = open ? "✕" : "☰";
+    });
+
+    // Auto-close when clicking a link
+    navMenu.querySelectorAll("a").forEach((a) => {
+      a.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+        toggleBtn.setAttribute("aria-expanded", "false");
+        toggleBtn.textContent = "☰";
+      });
+    });
+  </script>
+</html>
