@@ -209,11 +209,13 @@ a {
 .hero-img {
     background: #eee;
     padding: 30px;
+    border-radius: 4px;
 }
 
 .hero-img img {
     width: 100%;
     display: block;
+    border-radius: 4px;
 }
 
 .nav-links a.active::after {

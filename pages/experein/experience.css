@@ -6,7 +6,6 @@
 }
 
 body {
-    background: #f4f6fb;
     color: #1f2937;
 }
 
@@ -143,9 +142,11 @@ h2 {
     gap: 25px;
 }
 
+
+
 .carder {
     position: relative;
-    padding: 28px;
+    padding: 30px;
     border-radius: 18px;
     overflow: hidden;
 
@@ -153,12 +154,15 @@ h2 {
     border: 1px solid rgba(56, 189, 248, 0.28);
     box-shadow: 0 12px 28px rgba(2, 6, 23, 0.35);
     color: #e2e8f0;
-    line-height: 1.6;
-    transform: translateZ(0);
-    transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: all 0.25s ease;
 }
 
-
+/* Background glow */
 .carder::before {
     content: "";
     position: absolute;
@@ -168,8 +172,10 @@ h2 {
         radial-gradient(500px circle at 90% 30%, rgba(37, 99, 235, 0.14), transparent 50%);
     pointer-events: none;
     opacity: 0.9;
+    z-index: 0;
 }
 
+/* Top highlight line */
 .carder::after {
     content: "";
     position: absolute;
@@ -181,29 +187,75 @@ h2 {
     background: linear-gradient(90deg, rgba(56, 189, 248, 0.9), rgba(37, 99, 235, 0.35));
     pointer-events: none;
     opacity: 0.8;
+    z-index: 0;
 }
 
+/* Ensure content above glow */
+.carder>* {
+    position: relative;
+    z-index: 1;
+}
+
+/* Hover effect */
 .carder:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
     box-shadow: 0 20px 46px rgba(2, 6, 23, 0.45);
     border-color: rgba(56, 189, 248, 0.6);
 }
 
-.carder h3 {
-    position: relative;
-    margin: 10px 0 12px;
-    color: #38bdf8;
-    font-size: 1.22rem;
-    font-weight: 650;
-    letter-spacing: 0.2px;
+/* Summary label */
+.card-summary {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: rgba(56, 189, 248, 0.85);
+    margin-bottom: 6px;
 }
 
+/* Title */
+.carder h3 {
+    margin: 6px 0 14px;
+    color: #38bdf8;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+/* Description */
 .carder p {
-    position: relative;
     color: rgba(226, 232, 240, 0.88);
     line-height: 1.75;
     font-size: 0.96rem;
+    flex-grow: 1;
 }
+
+/* Footer */
+.card-footer {
+    margin-top: 22px;
+}
+
+/* Button */
+.detail-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 10px;
+    background: rgba(56, 189, 248, 0.12);
+    border: 1px solid rgba(56, 189, 248, 0.4);
+    color: #38bdf8;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.detail-btn:hover {
+    background: #38bdf8;
+    color: #0b1220;
+    box-shadow: 0 8px 20px rgba(56, 189, 248, 0.4);
+}
+
+
+
 
 .carder:focus-within {
     outline: 2px solid rgba(56, 189, 248, 0.8);
