@@ -382,6 +382,58 @@
     opacity: 0.75;
 }
 
+
+/* Scoped completely to nb-auto-card-* */
+
+.implement {
+    color: #38bdf8;
+}
+
+.nb-auto-card-wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto;
+}
+
+.nb-auto-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nb-auto-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.10);
+}
+
+.nb-auto-card__title {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.nb-auto-card__desc {
+    margin: 0 0 12px 0;
+    font-size: 14px;
+    color: #4b5563;
+}
+
+.nb-auto-card__tools {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 10px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #6680e7, #63afc6);
+    color: white;
+}
+
+
 /* Quick Links (same system) */
 .quick-links {
     padding: 22px;
