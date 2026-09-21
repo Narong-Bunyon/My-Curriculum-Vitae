@@ -1,0 +1,35 @@
+# =============================================================
+# .dockerignore
+# =============================================================
+# Works like .gitignore but for Docker.
+# Files listed here will NOT be copied into the Docker image,
+# making the build faster and the image smaller.
+# =============================================================
+
+# Version control
+.git
+.gitignore
+
+# IDE / Editor files
+.idea
+.vscode
+*.swp
+*.swo
+*~
+
+# Docker files (no need to include themselves)
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Documentation (not needed in production)
+README.md
+LICENSE
+
+# OS generated files
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Node modules (if you ever add npm packages)
+node_modules
